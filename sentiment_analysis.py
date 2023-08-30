@@ -14,7 +14,7 @@ from flask import Flask, request, jsonify
 model_name = 'nlptown/bert-base-multilingual-uncased-sentiment'
 
 TRANSFORMERS_CACHE = os.environ['TRANSFORMERS_CACHE']
-reviews_sentiment_sink = os.environ['reviews_sentiment_sink']
+reviews_sentiment_sink = os.environ['K_SINK']
 attributes = {
     "type": os.environ['ce_type'],
     "source": os.environ['ce_source']
